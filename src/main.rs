@@ -36,6 +36,16 @@ fn f_loop() {
             break;
         }
     }
+    println!("done");
+}
+
+fn f_while() {
+    let mut a = 5;
+    while a >= 1 {
+        println!("{:?}", a);
+        a = a - 1;
+    }
+    println!("done");
 }
 
 // this is entry point of this program
@@ -58,8 +68,10 @@ fn main() {
         println!("you are allowed inside");
     }
     // println!("{:?}", c_flow());
-    println!("\n");
+    println!("\nmatch keyword");
     f_match();
-    println!("\n");
-    f_loop()
+    println!("\nnormal loop");
+    f_loop();
+    println!("\nwhile loop");
+    f_while();
 }
