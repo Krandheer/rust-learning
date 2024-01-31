@@ -15,7 +15,7 @@ fn sum(a: i32, b: i32) -> i32 {
 //     }
 // }
 
-// practicing the match key work
+// practicing the match key work which seems to work better than if else
 fn f_match() {
     let name = "bob";
     match name {
@@ -23,6 +23,18 @@ fn f_match() {
         "bob" => println!("hello you are the one"),
         "ravi" => println!("hello mister was waitng for you"),
         _ => println!("nice to meet you"),
+    }
+}
+
+// learning how to use loop in rust
+fn f_loop() {
+    let mut i = 4;
+    loop {
+        println!("{:?}", i);
+        i = i - 1;
+        if i == 0 {
+            break;
+        }
     }
 }
 
@@ -48,4 +60,6 @@ fn main() {
     // println!("{:?}", c_flow());
     println!("\n");
     f_match();
+    println!("\n");
+    f_loop()
 }
