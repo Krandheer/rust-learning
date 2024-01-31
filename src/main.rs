@@ -14,6 +14,18 @@ fn sum(a: i32, b: i32) -> i32 {
 //         println!("you are allowed inside");
 //     }
 // }
+
+// practicing the match key work
+fn f_match() {
+    let name = "bob";
+    match name {
+        "hare" => println!("hello mister was waitng for you"),
+        "bob" => println!("hello you are the one"),
+        "ravi" => println!("hello mister was waitng for you"),
+        _ => println!("nice to meet you"),
+    }
+}
+
 // this is entry point of this program
 fn main() {
     // first hello world program as in language
@@ -34,4 +46,6 @@ fn main() {
         println!("you are allowed inside");
     }
     // println!("{:?}", c_flow());
+    println!("\n");
+    f_match();
 }
