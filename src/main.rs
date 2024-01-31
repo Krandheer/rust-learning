@@ -26,6 +26,7 @@ fn main() {
 
     println!("{:?}", sum(5, 3));
 
+    // simple flow control
     let age = 21;
     if age >= 24 {
         println!("you are not allowed inside");
