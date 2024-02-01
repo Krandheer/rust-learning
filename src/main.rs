@@ -1,5 +1,3 @@
-mod a1;
-
 // simple finding sum function
 fn sum(a: i32, b: i32) -> i32 {
     return a + b;
@@ -55,8 +53,6 @@ fn main() {
 
     // let a = 12;
     // println!("{:?}", a);
-
-    a1::complete_name();
 
     println!("{:?}", sum(5, 3));
 
