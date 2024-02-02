@@ -3,7 +3,6 @@ struct ShippingBox {
     width: i32,
     depth: i32,
 }
-
 fn main() {
     let my_box = ShippingBox {
         height: 3,
