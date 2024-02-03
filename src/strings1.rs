@@ -1,3 +1,9 @@
+#[derive(Debug)]
+enum Position {
+    Manager,
+    Supervisor,
+    Worker
+}
 struct LineItem {
     name: String,
     count: i32,

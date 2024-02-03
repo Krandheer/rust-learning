@@ -11,7 +11,7 @@ impl Temperature {
     // fn display_temp(temp: Temperature) {
     //     println!("the temperature in farenhite is: {:?}", temp.degrees_f);
     // }
-    
+
     fn display_temp(&self) {
         println!("the temperature in farenhite is: {:?}", self.degrees_f);
     }
