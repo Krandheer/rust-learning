@@ -28,7 +28,7 @@ use rand::Rng;
 use std::io;
 
 fn main() {
-    println!("gues the number!");
+    println!("guess the number!");
     let secret_num = rand::thread_rng().gen_range(1..=100);
     println!("plz input your guess");
     let mut guess = String::new();
@@ -37,4 +37,16 @@ fn main() {
         .expect("failed to read line");
     println!("your guessed number is {guess}");
     println!("the secret number is: {secret_num}");
+    let guess: u32 = match guess.trim().parse() {
+        Ok(num) => num,
+        Err(_) => {
+            println!("Invalid input. Please enter a number.");
+            return;
+        }
+    };
+    if guess == secret_num {
+        println!("your guess is right");
+    } else {
+        println! {"your guess is wrong"}
+    }
 }
