@@ -38,12 +38,15 @@ fn main() {
             .read_line(&mut guess)
             .expect("failed to read line");
         println!("your guessed number is {guess}");
-        println!("the secret number is: {secret_num}");
+        // println!("the secret number is: {secret_num}");
 
-        let guess: i32 = guess.trim().parse().expect("please type a number");
+        let guess: i32 = match guess.trim().parse() {
+            Ok(num) => num,
+            Err(_) => continue,
+        };
 
         println!("\nusing ordering function:");
-        match secret_num.cmp(&guess) {
+        match guess.cmp(&secret_num) {
             Ordering::Less => println!("your number is less"),
             Ordering::Greater => println!("your number is more than secret number"),
             Ordering::Equal => {
