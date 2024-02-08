@@ -4,12 +4,12 @@ pub(crate) fn learn_variables() {
     // x = 6;
     // println!("the value of x is: {x}");
 
-    //scoping and shadoing of variable
+    // scoping and shadoing of variable
     let x = 5;
     let x = x + 1;
     {
         let x = x * 2;
         println!("the value of x in inner scope is {x}");
     }
-    println!("value of x is: {x}")
+    println!("value of x is: {x}");
 }

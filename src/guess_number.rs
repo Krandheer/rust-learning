@@ -14,6 +14,7 @@ pub(crate) fn guess_num() {
         println!("your guessed number is {guess}");
         // println!("the secret number is: {secret_num}");
 
+        // shadowing of previous guess variable by using let again;
         let guess: i32 = match guess.trim().parse() {
             Ok(num) => num,
             Err(_) => continue,
