@@ -39,13 +39,7 @@ fn main() {
     println!("your guessed number is {guess}");
     println!("the secret number is: {secret_num}");
 
-    let guess: u32 = match guess.trim().parse() {
-        Ok(num) => num,
-        Err(_) => {
-            println!("Invalid input. Please enter a number.");
-            return;
-        }
-    };
+    let guess: i32 = guess.trim().parse().expect("please type a number");
 
     println!("\nusing ordering function:");
     match secret_num.cmp(&guess) {
