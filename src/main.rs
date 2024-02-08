@@ -1,4 +1,6 @@
+pub mod a1;
 pub mod guess_number;
+pub mod variables;
 
 fn main() {
     //     let vec: Vec<i32> = vec![];
@@ -24,5 +26,7 @@ fn main() {
     // let x = 4;
     // println!("{}", x);
     // println!("{}", x);
-    guess_number::guess_num();
+    // guess_number::guess_num();
+    // variables::learn_variables();
+    a1::complete_name();
 }
