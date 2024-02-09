@@ -2,7 +2,7 @@
 enum Position {
     Manager,
     Supervisor,
-    Worker
+    Worker,
 }
 struct LineItem {
     name: String,
@@ -28,11 +28,14 @@ fn main() {
             count: 61,
         },
     ];
-    for item in receipt {
-        println!("name: {:?} and number: {:?}", item.name, item.count);
-    }
+    // for item in receipt {
+    //     println!("name: {:?} and number: {:?}", item.name, item.count);
+    // }
 
     println!("");
+    let mut s = String::from("hello");
+    s.push_str(", world");
+    println!("s: {s}");
     // this below loop throws error because receipt vector got used once and hence doesn't exist in
     // memeory
     // for item in receipt {
