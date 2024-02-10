@@ -3,6 +3,12 @@ struct ShippingBox {
     width: i32,
     depth: i32,
 }
+
+#[derive(Debug)]
+struct Rectangle {
+    height: u32,
+    width: u32,
+}
 fn main() {
     let my_box = ShippingBox {
         height: 3,
@@ -10,6 +16,17 @@ fn main() {
         depth: 5,
     };
 
-    let tall = my_box.height;
-    println!("{:?}", tall);
+    // let tall = my_box.height;
+    // println!("{:?}", tall);
+    let rectangle = Rectangle {
+        height: 12,
+        width: 4,
+    };
+    let rect_area = area(&rectangle);
+    println!("rectangle area is: {rect_area}");
+    println!("rectangle is: {:?}", rectangle);
+}
+
+fn area(s: &Rectangle) -> u32 {
+    return s.height * s.width;
 }
