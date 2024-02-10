@@ -24,7 +24,7 @@ fn main() {
     };
     let rect_area = area(&rectangle);
     println!("rectangle area is: {rect_area}");
-    println!("rectangle is: {:?}", rectangle);
+    println!("rectangle is: {:#?}", rectangle);
 }
 
 fn area(s: &Rectangle) -> u32 {
