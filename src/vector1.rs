@@ -15,7 +15,13 @@ fn main() {
         Test { run: 98 },
         Test { run: 10 },
     ];
-    for run in scores {
-        println!("{:?}", run.run);
-    }
+    // for run in scores {
+    //     println!("{:?}", run.run);
+    // }
+    //
+    let mut v = vec![1, 3, 5, 6];
+    let first = &v[0];
+    println!("the first element is {first}");
+    v.push(4);
+    println!("vec: {:?}", v);
 }
