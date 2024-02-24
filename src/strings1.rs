@@ -62,7 +62,10 @@ fn main() {
     // println!("r is r: {r}");
     let mut s = String::from("hello world");
     let word = slices(&s); // here word is reference to slice hello
-    // we can't do mutable operation on s and then use referce to s through word in println.
-    // s.clear();
+                           // we can't do mutable operation on s and then use referce to s through word in println.
+                           // s.clear();
     println!("word is: {word}");
+    // let mut s1 = String::new(); //defining string using new keyword
+    // let s1 = "hello world".to_string();  // string defining using to_string method.
+    // let s1 = String::from("hello world") //using from keyword to define s1 keyword.
 }

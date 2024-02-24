@@ -27,6 +27,7 @@ fn main() {
     // for i in v {
     //     println!("{i}");
     // }
+
     for i in &mut v {
         *i += 50;
         println!("{i}");
