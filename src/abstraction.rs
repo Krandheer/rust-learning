@@ -10,7 +10,6 @@ fn largest(list: &[i32]) -> i32 {
     *largest
 }
 
-
 // generice function that can be used in case of number and characters for same work
 fn largest2<T: std::cmp::PartialOrd>(list: &[T]) -> &T {
     let mut largest = &list[0];
