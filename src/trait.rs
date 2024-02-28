@@ -22,5 +22,5 @@ fn main() {
         content: String::from("there is some amazing thing being done by indian customer on purpose and that's quite impressing"),
         location: String::from("sultanpur"),
     };
-    println!("1 new article, {:?}", news.summarize());
+    println!("1 new article: {:?}", news.summarize());
 }
