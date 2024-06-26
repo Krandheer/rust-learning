@@ -28,5 +28,13 @@ fn main() {
     // println!("{}", x);
     // guess_number::guess_num();
     // variables::learn_variables();
-    a1::complete_name();
+    // a1::complete_name();
+    create_str();
+    print!("2");
+}
+fn create_str() {
+    let s1 = String::from("hello there");
+    println!("{}", s1);
+    let s2 = s1;
+    println!("{}", s2);
 }
