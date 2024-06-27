@@ -1,6 +1,6 @@
-pub mod a1;
-pub mod guess_number;
-pub mod variables;
+// pub mod a1;
+// pub mod guess_number;
+// pub mod variables;
 
 fn main() {
     //     let vec: Vec<i32> = vec![];
@@ -29,12 +29,17 @@ fn main() {
     // guess_number::guess_num();
     // variables::learn_variables();
     // a1::complete_name();
-    create_str();
-    print!("2");
-}
-fn create_str() {
-    let s1 = String::from("hello there");
-    println!("{}", s1);
-    let s2 = s1;
+    // create_str();
+    // print!("2");
+
+    let mut s1 = String::from("hello");
+    let s2 = &mut s1;
+    s2.push_str(" world");
     println!("{}", s2);
 }
+// fn create_str() {
+//     let s1 = String::from("hello there");
+//     println!("{}", s1);
+//     let s2 = s1;
+//     println!("{}", s2);
+// }
